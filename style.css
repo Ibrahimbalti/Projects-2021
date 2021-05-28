@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+*{padding: 0;margin: 0;box-sizing: border-box;}
+body{
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    /* min-height: 100vh; */
+     background-color: #0F2027;
+}
+body h1 {
+    color: white;
+    margin-top: 50px;
+    word-spacing: 20px;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  
+}
+.Project1{
+    transform-style: preserve-3d;
+    margin-top:50px ;
+    width: 400px;
+    height: 60px;
+    margin-left: 0px;;
+    padding: 0px;
+    background-color: blue;
+    border-radius: 5px;
+    border: 2px solid white;
+    box-shadow: 0 3px 10px white;
+    text-align: center;
+    /* transition-property: background-color;
+    transition-delay: 1s;
+    transition-duration: 2s;
+    transition-timing-function: ease-in; */
+    /* animation-name: background-color;
+    animation-delay: 2s;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    transform: scale(1); */
+}
+/* @keyframes background-color {
+    0%, 15%  {
+        transform: scale(1, 0);
+    }
+    
+    25%, 100% {
+        transform: scale(1, 1);
+    }
+} */
+
+/* @keyframes background-color {
+    0%, 25%  {
+        transform: scale(0, 0);
+    }
+    
+    35%, 100% {
+        transform: scale(1, 1);
+    }
+} */
+
+
+
+
+.Project1 a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-size: 32px;
+}
+
+.Project1 h4{
+    padding-top: 8px;
+    font-size: 30px;
+    word-spacing: 10px;
+    letter-spacing: 10px;
+    
+}
+
+.Project1:hover{
+    background-color: tomato;
+    cursor: pointer;
+}
+
+.Project1 h5{
+    padding-top: 10px;
+    font-size: 22px;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+    color: white;
+    
+}

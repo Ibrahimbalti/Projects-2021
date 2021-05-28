@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+    <script src="https://kit.fontawesome.com/e65eefee78.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="form-container">
+        <form action="" class="form" id="form">
+            <h2>Create a Account</h2>
+
+    <!------------------------------Username------------------------>
+
+            <div class="control-form" id="conftrol-from">
+                <span style="display: inline;"><i class="fa fa-user" aria-hidden="true"></i></span>
+                <input type="text" id="username" class="input" placeholder="Username">
+                <hr>
+                <small>Error Message</small>
+            </div>
+
+             <!----------------------------Email------------------------->
+
+            <div class="control-form " id="conftrol-from">
+                <span><i class="fa fa-location-arrow" aria-hidden="true"></i></span>
+                <input type="email" id="email" class="input" placeholder="Email Address">
+                <hr>
+                <small>Error Message</small>
+            </div>
+
+            <!----------------------------Password------------------------->
+
+            <div class="control-form " id="conftrol-from">
+                <span><i class="fa fa-lock" aria-hidden="true"></i></span>
+                <input type="password" id="password" class="input" placeholder="Password">
+                <hr>
+                <small>Error Message</small>
+            </div>
+
+            <!----------------------------Confirm Password------------------------->
+
+            <div class="control-form" id="conftrol-from">
+                <span><i class="fa fa-lock" aria-hidden="true"></i></span>
+                <input type="password" id="password2" class="input" placeholder="Confirm Password">
+                <hr>
+                <small>Error Message</small>
+            </div>
+
+            <button>Sign Up</button>
+            <pre>By clickling the Sign Up button, you agree to our 
+    <spna style="color:#1eae98;">Terms & Condition</spna> and <span style="color:#1eae98;"> Privacy Policy</span> </pre>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

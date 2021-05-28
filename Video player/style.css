@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{padding:0;margin:0;box-sizing: border-box;}
+
+
+
+/*................Animation Section start..............*/
+
+.img-animation{
+   
+    height:100%;
+    width:100%;
+    /* background:radial-gradient(#333,#000); */
+    position:absolute;
+    top:0;
+    left: 0;
+    right:0;
+
+
+}
+
+.left{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+.left div{
+    position:absolute;
+    display: block;
+}
+
+.leaf div:nth-child(1){
+    left:20%; 
+    animation:fall 15s linear infinite ;
+    animation-delay:-2s;
+
+}
+
+.leaf div:nth-child(2){
+    left:70%; 
+    animation:fall 15s linear infinite ;
+    animation-delay:-4s;
+}
+.leaf div:nth-child(3){
+    left:10%; 
+    animation:fall 20s linear infinite ;
+    animation-delay:-7s;
+    
+}
+
+
+.leaf div:nth-child(4){
+    left:50%; 
+   animation:fall 18s linear infinite ; 
+   animation-delay:-5s;
+}
+.leaf div:nth-child(5){
+    left:85%; 
+    animation:fall 14s linear infinite ;
+    animation-delay:-5s;
+}
+.leaf div:nth-child(6){
+    left:15%; 
+    animation:fall 16s linear infinite ;
+    animation-delay:-10s;
+}
+.leaf div:nth-child(7){
+    left:90%; 
+    animation:fall 15s linear infinite ;
+    animation-delay:-4s;
+}
+
+@keyframes fall {
+    0%{
+        opacity:1;
+            top:-10%;
+            transform:translateX(20px) rotate(0deg);
+
+    }
+
+    20%{
+        opacity:0.8;
+        transform:translateX(-20px) rotate(45deg);
+    }
+
+    40%{
+    
+        transform:translateX(-20px) rotate(90deg);
+    }
+    60%{
+        
+       transform:translateX(-20px) rotate(135deg); 
+    }
+    80%{
+    
+        transform:translateX(-20px) rotate(180deg);
+    }
+
+    100%{
+            
+       top:110%;
+        transform:translateX(-20px) rotate(225deg);
+    }
+}
+
+.leaf2{
+    transform: rotateX(180deg);
+}
+
+/*................Animation Section End..............*/
+/* @keyframes change{
+	0%{
+	background-position: 0 50%;
+}
+50%{
+	background-position: 100% 50%;	
+}
+
+100%{
+	background-position: 0 50%;	
+}
+} */
+
+h1 {
+    color: white;
+    font-size: 40px;
+    word-spacing: 20px;
+    letter-spacing: 10px;
+    font-family: 'Roboto', sans-serif;
+   position: absolute;
+  
+   top:90px;
+   left:100px;
+   /* right: 20px; */
+    z-index: 2;
+   
+    writing-mode: vertical-lr;
+    display: inline;
+}
+.screen{
+    width: 60%;
+    /* height: 345px; */
+   
+    background-color: green;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+     cursor: pointer;
+     margin-top: 150px;
+     z-index: 1;
+}
+.control{
+    width: 60%;
+    background-color:black;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding-top: 10px;
+    margin-bottom: 100px;
+    
+    z-index:1;
+    
+}
+.icons{
+ display: flex;
+ margin-left: 20px;
+ justify-content: space-around;
+ padding-top:8px;
+ padding-bottom: 5px;
+}
+.play{
+    border:none;
+    background: transparent;
+    font-size: 20px;
+    color: white;
+}
+
+.stop{
+    border:none;
+    background: transparent;
+    font-size: 20px;
+    color: white;
+}
+.next{
+    border:none;
+    background: transparent;
+    font-size: 20px;
+    color: white;
+    
+}
+.volum{
+    border:none;
+    background: transparent;
+    font-size: 20px;
+    color: white;
+}
+
+.fullscreen{
+    border:none;
+    background: transparent;
+    font-size: 20px;
+    color: white;
+}
+.timestamp{
+    color:white;
+    font-family: 'Lato',sans-serif;
+    font-size: 15px;
+    padding-top:3px;
+}
+
+
+
+

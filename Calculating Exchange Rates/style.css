@@ -1,0 +1,120 @@
+ @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    padding:0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #4c5d89;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    background-color:#dddddd;
+    /* width: 1400px;
+    height: 600px; */
+    border-radius: 30px;
+    box-shadow: 0px 3px 10px black;
+    border: 2px solid black;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    overflow: hidden;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.container h1{
+    color: black;
+    padding-bottom: 40px;
+    padding-top: -10px;
+    font-size: 50px;
+}
+
+.container p{
+    color: #393e46;
+    font-size: 20px;
+}
+
+.Exchange{
+    margin: 50px 0;
+    position: relative;
+    display: flex;
+    padding-top: 50px;
+    /* background-color: red;; */
+    
+
+}
+
+.currency{
+    display: flex;
+    /* background-color: purple; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    
+}
+.currency input{
+    text-align: center;
+    border: 0;
+    background-color: transparent;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.currency input:focus{
+    outline: none;
+}
+
+.currency select{
+    position:relative;
+    border: 1px;
+    width: 200px;
+    height: 40px;
+    margin-top: 20px;
+    background-color: transparent;
+    font-size: 25px;
+    /* margin-bottom: 40px; */
+    font-weight: bold;
+    
+     /* margin-left: 40px;
+     margin-right: 40px; */
+}
+
+/* .amounttwo{
+    text-align:center;
+} */
+
+.currency select:focus{
+    outline:0;
+}
+
+.swap{
+    position: absolute;
+    top: 133px;
+    left: 460px;
+    right: 0px;
+}
+
+.swap i{
+    text-align:center;
+    border-radius: 20px;
+    height: 40px;
+    width: 120px;
+    font-size: 40px;
+    color: white;
+    background:-moz-linear-gradient(top, #e72c83 0%, #a742c6 100%); 
+    background: -webkit-linear-gradient(top, #e72c83 0%,#a742c6 100%); 
+    background: linear-gradient(to bottom, #e72c83 0%,#a742c6 100%);
+}
+
