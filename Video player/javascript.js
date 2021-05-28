@@ -1,6 +1,6 @@
 // Target All the HTML Elements
 // ..............Start.......................
-
+const background = document.querySelector('#background')
 const video=document.getElementById("video");
 const play=document.getElementById('play');
 const stop=document.getElementById('stop');
@@ -12,14 +12,18 @@ const nextvideo=document.getElementById('next');
 const previosvideo=document.getElementById('previous');
 var videoSource = ["video/joker.mp4","video/Rauf & Faik).mp4","video/Dharia1.mp4","video/Ali Gatie .mp4"];
 var posters=["image/joker1.jpg","image/neverlieme.jpg","image/DHARIA.jpg","image/aligate.jpg"];
+// let songs=["video/joker.mp4","video/Rauf & Faik).mp4","video/Dharia1.mp4","video/Ali Gatie .mp4"];
+// let thumbnails=["image/joker1.jpg","image/neverlieme.jpg","image/DHARIA.jpg","image/aligate.jpg"];
 // videoSource[0]='video/topgun.m4v';
 // videoSource[1]='video/joker.m4v';
 // video.videoHeight(360);
 // video.videoHeight(400, { constrain: true });
 var videoCount = videoSource.length;
 var videoindex=0;
+// let songIndex = 0;
 video.setAttribute('poster',posters[videoindex])
 video.setAttribute("src", videoSource[videoindex]);
+
 // console.log(videoCount)
 
 // ....................End........................
@@ -92,7 +96,7 @@ function updatevolum(){
 
 // update progress
 function updateProgress(){
-    
+   
     progress.value=(video.currentTime/video.duration)*100;
     
     let mins=Math.floor(video.currentTime/60);
@@ -107,7 +111,9 @@ function updateProgress(){
     {
         sec='0' + String(sec)
     }
+    
     timestamp.innerText=`${mins}:${sec}`
+    
 }
 
 // Play to Next Vidoe
@@ -121,13 +127,15 @@ function NextVideos(){
         play.innerHTML='<i class="fas fa-play "></i>'
     }
 
-    if(videoindex < videoCount - 1){
+    if(videoindex < videoCount){
+        videoCount--;
         videoindex++;
+        
     }
     else{
         videoindex = 0;
     }
-    
+    background.src = posters[videoindex];
     video.setAttribute('poster',posters[videoindex])
     video.setAttribute("src", videoSource[videoindex]);
     video.pause();
@@ -146,18 +154,42 @@ function PreviousVideo(){
     else{
         play.innerHTML='<i class="fas fa-play "></i>'
     }
-
-    if(videoindex < videoCount-1){
-        videoindex--;
+    
+    if( videoindex ==0){
+        
+        videoindex = 0;
+        
     }
     else{
-        videoindex=0;
+        videoindex--;
     }
+    // if( i <= 0) i= video.length;
+       
+    //     i--;
+    //     return Rvideo();
+    // songIndex--;
+    // if (songIndex < 0) {
+    //     songIndex = 1;
+    // };
+    // video.src = songs[songIndex];
+    // thumbnail.src = thumbnails[songIndex];
+    // background.src = thumbnails[songIndex];
+
+    // songArtist.innerHTML = songArtists[songIndex];
+    // songTitle.innerHTML = songTitles[songIndex];
+
+    // playing = true;
+    // video.pause();
+    
 
     video.setAttribute('poster',posters[videoindex])
     video.setAttribute("src", videoSource[videoindex]);
+    video.pause();
 }
 
+// function Rvideo(){
+//     return video.setAttribute('src','video'+videoSource[i])
+// }
 
 //...............End................
 
