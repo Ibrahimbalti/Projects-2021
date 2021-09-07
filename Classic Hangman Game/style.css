@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #02475E;
+    font-family: 'Roboto', sans-serif;
+    column-rule: white;
+    display: flex;
+    flex-direction: column;
+    text-align:center;
+    overflow: hidden;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.figure{
+    fill: transparent;
+    stroke: white;
+    stroke-width: 2px;
+    color: white;
+}
+.figure-part{
+    display: none;
+}
+body h2{
+    color: white;
+    letter-spacing: 10px;
+    font-size: 20px;
+}
+
+body p{
+    color: white;
+    letter-spacing: 3px;
+}
+
+.correctletter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    /* background-color: red; */
+    
+}
+
+
+.letter{
+    color: white;
+    margin-left: 20px;
+    padding:10px 0px;
+    border-bottom: 3px solid white;
+    width: 30px;
+    font-size: 20px;
+}
+
+.incorrectletter{
+    position:absolute;
+    top:120px;
+    left: 800px;
+}
+
+.incorrectletter span{
+    color: white;
+}
+
+.congratulation-container{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.3);
+    transform: translateX(-50);
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    display: none;
+}
+
+.congrate{
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.congrat-heading{
+    padding-bottom: 20px;
+    color:#0A1931;
+    font-size: 20px;
+    font-weight:bold;
+}
+.playagain{
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: 600px;
+    border: none;
+    border-radius: 5px;
+    background-color: #7B113A;
+    color: white;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.playagain:active{
+    transform: scale(0.95);
+}
+
+.notification{
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin-top: 72px;
+    border-radius: 10px;
+   position: absolute;
+   /* top: 480px; */
+   bottom: -68px;
+transition: transform 0.5s ease-in-out;
+}
+
+.notification.show{
+    transform: translateY(-68px);
+}

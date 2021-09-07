@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Food Selector</title>
+    <Link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+
+<div class="header">
+    <div>
+        <img src="logo.jpg" alt="logo">
+    </div>
+    
+    <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact us</li>
+    </ul>
+    
+</div>
+
+<div class="bg-container">
+    <h1>Random Food Selector</h1>
+
+
+    <div class="search-container">
+        <div>
+        <form  class="submit" id="submit" class="search-container">
+            
+                <input type="text" class="search-text" id="search-text" placeholder="Search">
+                <button class="search-btn" id="search-btn">
+                    <i class="fas fa-search"></i>
+                </button> 
+                    
+        </form>
+        
+        <button class="generate-btn" id="generate-btn">
+            <i class="fas fa-random"></i>
+          </button>
+        </div>
+</div>
+</div>
+
+    <div class="container">
+        
+
+<!----------------------------------Search Container------------------------------------------>
+
+        
+
+<!----------------------------------After Search------------------------------------------>
+                    <h3 class="reuslt-heading" id="reuslt-heading"></h3>
+
+<!----------------------------------Meals------------------------------------------>
+
+                    <div class="meals" id="meals"></div>
+
+<!----------------------------------Selected Meals------------------------------------------>
+
+              <div class="selected-meals" id="selected-meals"></div>
+
+<!----------------------------------Meal-info------------------------------------------>
+
+                      <!-- <div class="meal-info" id="meal-info"></div> -->
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

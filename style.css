@@ -1,96 +1,577 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
-*{padding: 0;margin: 0;box-sizing: border-box;}
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --modal-duration: 1s;
+    --primary-color: #227093;
+    --secondary-color: #d1ccc0;
+    }
+
 body{
     font-family: 'Lato', sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    align-items: center;
-    /* min-height: 100vh; */
-     background-color: #0F2027;
+    /* transform: translate(-100%); */
 }
-body h1 {
-    color: white;
-    margin-top: 50px;
-    word-spacing: 20px;
+
+/*....................Nav..................*/
+
+nav{
+    /* position:fixed;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    width: 250px;
+    background-color: var(--primary-color);
+    height: 100vh;
+    transform: translate(-100%);
+    z-index: 100; */
+    position:fixed;
+    top:0;
+    left:0;
+    background-color:var(--primary-color);
+    width: 200px;
+    height: 100vh;
+    z-index: 500;
+    
+    
 }
-.container{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+
+.show-menu{
+    transform: translate(200px);
+}
+
+.logo{
+    /* z-index: 100;
+
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+    height: auto;
+    padding: 0px; */
+    /* background-color: brown; */
+    text-align: center;
+    padding: 30px 0;
+}
+
+.logo img{
+    /* width: 100px;
+    height: auto;
+    margin: 0 auto;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   border-radius: 50%; */
+   width: 100px;
+    height: auto;
+    border-radius: 50%;
   
 }
-.Project1{
-    transform-style: preserve-3d;
-    margin-top:50px ;
-    width: 400px;
-    height: 60px;
-    margin-left: 0px;;
-    padding: 0px;
-    background-color: blue;
-    border-radius: 5px;
-    border: 2px solid white;
-    box-shadow: 0 3px 10px white;
+
+nav ul{
+    list-style: none;
     text-align: center;
-    /* transition-property: background-color;
-    transition-delay: 1s;
-    transition-duration: 2s;
-    transition-timing-function: ease-in; */
-    /* animation-name: background-color;
-    animation-delay: 2s;
-    animation-duration: 3s;
-    animation-timing-function: ease-in-out;
-    transform: scale(1); */
+    margin-top: 20px;
 }
-/* @keyframes background-color {
-    0%, 15%  {
-        transform: scale(1, 0);
-    }
-    
-    25%, 100% {
-        transform: scale(1, 1);
-    }
-} */
 
-/* @keyframes background-color {
-    0%, 25%  {
-        transform: scale(0, 0);
-    }
-    
-    35%, 100% {
-        transform: scale(1, 1);
-    }
-} */
+nav ul li{
+  border-bottom:2px solid rgba(0,0,0,0.3);
+  width: 100%;
+  /* margin: 30px 0px; */
+  padding: 30px;
+}
 
-
-
-
-.Project1 a{
-    text-decoration: none;
+nav ul li a{
     color: white;
-    text-align: center;
-    font-size: 32px;
+    text-decoration: none;
 }
 
-.Project1 h4{
-    padding-top: 8px;
-    font-size: 30px;
-    word-spacing: 10px;
-    letter-spacing: 10px;
+nav ul li:first-of-type{
+    border-top:2px solid rgba(0,0,0,0.3); ;
+}
+
+nav ul li:hover{
+    text-decoration: underline;
+   
+}
+
+/*....................Header..................*/
+
+header{
+    background-color: var(--primary-color);
+    position: relative;
+    text-align: center;
+    padding-top:20px;
+    padding-bottom: 20px; 
+    /* font-size: 150%; */
+    color: white;
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.6)),url(./image/bg.jpg);
+    width: 100%;
+    height:500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-attachment:; */
+    background-position: center;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    /* background-color: var(--primary-color);
+    position: relative;
+    color: white;
+    padding: 30px 20px;
+    font-size: 150%;
+    text-align:center; */
+}
+
+/* .content h1{
+word-spacing: 20px;
+font-size: 50px;
+font-weight: lighter;
+letter-spacing: 2px;
+} */
+
+
+.content{
+
+   position:absolute;
+   top:30%;
+   left: 0;
+   /* background-color: green; */
+   width: 100%;
+   height: 300px;
+    /* text-align: center; */
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+
+
+}
+
+.content h2{
+    letter-spacing: 2px;
+    word-spacing: 20px;
+    padding-top: 55px;
+    font-size: 200%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
     
 }
 
-.Project1:hover{
-    background-color: tomato;
+header button{
+    background-color: var(--secondary-color);
+    color:black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 0px;
+}
+ .content p{
+     
+    padding-top:30px;
+    word-spacing: 10px;
+    letter-spacing: 2px;
+    font-size: 380%;
+    font-family: 'Roboto', sans-serif;
+ }
+
+ .content p span{
+    font-size: 60px;
+    font-weight: 700;
+ }
+.toggle{
+    position:absolute;
+    top: 20px;
+    left: 20px;
+    background-color: rgba(0,0,0,0.3);
+    color: white;
+}
+
+.toggle:hover{
+    transform:scale(1.1);   
     cursor: pointer;
 }
 
-.Project1 h5{
-    padding-top: 10px;
-    font-size: 22px;
-    word-spacing: 5px;
-    letter-spacing: 2px;
+.signup {
+    margin-top: 50px;
+    padding: 20px 50px;
+    font-size: 20px;
+    background-color: rgba(100,0,30,1);
     color: white;
+    box-shadow: 1px 1px 2px white;
     
 }
+.signup:hover{
+    transition: 1s ease-in-out;
+    transform:scale(1.1);   
+    cursor: pointer;
+
+}
+
+
+/*................Container.........*/
+
+.container{
+    display: flex;
+    justify-content:space-evenly;
+      flex-wrap: wrap;
+      position: relative;
+      
+}
+
+.project{
+    width: 300px;
+    height: auto;
+    background-color: white;
+    margin-top: 60px;
+    /* border-radius: 10px; */
+    padding: 0px;
+    /* border: 2px solid #1e212d; */
+    box-shadow: 1px 1px 10px #231e23;
+
+}
+
+.project:hover{
+    transition: 1s ease;
+    transform: scale(1.1);
+    background-color: linear-gradient(rgba(0,0,0,0.5))
+}
+
+.project img{
+    width: 297px;
+    height: auto;
+    border-bottom: 1px solid red;
+    
+}
+
+.project h4{
+    color:black;
+    text-align: center;
+    margin:10px 0;
+    word-spacing: 3px;
+    letter-spacing: 2px;
+    
+}
+
+.project a{
+    
+    text-decoration: none;
+}
+
+
+
+/*...............Moal-Container.........*/
+
+.modal-container{
+    /* display:flex;
+    flex-direction: column;
+    background-color:rgba(0,0,0,0.3);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none; */
+    position:fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: rgba(0,0,0,0.6);
+    display: none;
+
+}
+.modal-container.show-contact{
+    display: block;
+}
+
+.modal{
+    background-color: #232323;
+    margin: 0 auto;
+    padding: 20px 20px;
+    border-radius: 10px;
+   max-width: 100%;
+   width: 400px;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   overflow: hidden;
+   animation-name: modalopen;
+   animation-duration: var(--modal-duration);
+   /* background-color:black;
+   border-radius: 10px;
+   box-shadow: 0 0 10px rgba(0,0,0,0.3);
+   position: absolute;
+   overflow: hidden;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   max-width: 100%;
+   width: 400px;
+   animation-name: modalopen;
+   animation-duration: var(--modal-duration); */
+
+   
+   
+} 
+
+.modal-form div{
+    margin: 20px 0px;
+}
+
+.modal-form div input{
+    padding: 15px 10px;
+    border-radius: 5px;
+    border: 0px;
+    width: 100%;
+}
+
+.modal-form div input:focus{
+    outline: none;
+}
+
+
+.message {
+    /* padding: 60px 30px; */
+    width: 100%;
+    border-radius: 2px;
+    outline: none;
+    border: 0px;
+}
+
+
+/* .message:hover{
+    outline: none;
+    border: 0px;
+} */
+
+.modal-form button{
+    margin-top: 10px;
+    border-radius: 5px;
+    padding:10px 10px;
+    background-color: white;
+   /* border-bottom: 2px solid blue; */
+    font-size: 15px;
+    /* background-color: rgba(0,0,0,0.3); */
+    color: black;
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+    box-shadow: 3px 3px 2px lightgrey;
+    
+
+}
+.modal-form button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+
+.modal-header{
+    margin-top: 0px;
+    /* background-color: red; */
+    padding-top: 0px;
+} 
+.modal-header h2{
+    margin-top: 0px;
+    padding-top: 0px;
+    color: white;
+    /* border-bottom: 1px solid red; */
+}
+
+#close {
+    position:absolute;
+    top: 15px;
+    left: 350px;
+    color: white;
+    font-size: 30px;
+    
+}
+
+#close:hover{
+    cursor: pointer;
+}
+
+@keyframes modalopen {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/*............Footer.................*/
+
+.footer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    width: 100%;
+    height: 50px;
+    background-color: #1b2021;
+}
+
+/*........Medai Query.....*/
+
+@media only screen and (max-width: 2560px) {
+    nav {
+      height: 80%;
+    }
+    .project{
+        
+        margin-left: 80px;
+        width: 500px;
+    }
+    .project img{
+        width: 100%;
+    }
+  }
+
+  @media only screen and (max-width: 1440px){
+    .project{
+        
+        margin-left: 0px;
+        width: 300px;
+    }
+    nav {
+        height: 100vh;
+      }
+  }
+
+  @media only screen and (max-width: 1024px){
+    .content h2{
+        letter-spacing: 2px;
+        word-spacing: 20px;
+        padding-top: 55px;
+        font-size: 150%;
+        font-family: 'Roboto', sans-serif;
+        font-weight: lighter;
+        
+    }
+  }
+
+  @media only screen and (max-width: 768px){
+    .content h2{
+        letter-spacing: 2px;
+        word-spacing: 20px;
+        padding-top: 55px;
+        font-size: 110%;
+        font-family: 'Roboto', sans-serif;
+        font-weight: lighter;
+        
+    }
+
+    .project{
+        width: 100%;
+    }
+    
+  }
+
+  @media only screen and (max-width: 425px){
+    .content h2{
+        letter-spacing: 2px;
+        word-spacing: 20px;
+        padding-top: 10px;
+        font-size: 80%;
+        font-family: 'Roboto', sans-serif;
+        font-weight: lighter;
+        
+    }
+
+    /* .project{
+        width: 100%;
+    } */
+    .content p{
+     
+        padding-top:30px;
+        word-spacing: 10px;
+        letter-spacing: 2px;
+        font-size: 190%;
+        font-family: 'Roboto', sans-serif;
+     }
+     .content p span{
+         
+        font-size: 35px;
+        font-weight: 700;
+     }
+
+     .signup {
+        margin-top: 50px;
+        padding: 10px 10px;
+        font-size: 20px;
+        background-color: rgba(100,0,30,1);
+        color: white;
+        box-shadow: 1px 1px 2px white;
+        font-size: 20px;
+        
+    }
+    header{
+        height: 300px;
+    }
+  }
+
+  @media only screen and (max-width: 375px){
+    .content h2{
+        letter-spacing: 2px;
+        word-spacing: 20px;
+        padding-top: 55px;
+        font-size: 100%;
+        font-family: 'Roboto', sans-serif;
+        font-weight: lighter;
+        
+    }
+    .content p span{
+        font-size: 20px;
+        font-weight: 700;
+     }
+     .content p{
+     
+        padding-top:20px;
+        word-spacing: 10px;
+        letter-spacing: 2px;
+        font-size: 100%;
+        font-family: 'Roboto', sans-serif;
+     }
+
+     .signup {
+        margin-top: 20px;
+        padding: 10px 20px;
+        font-size: 15px;
+        background-color: rgba(100,0,30,1);
+        color: white;
+        box-shadow: 1px 1px 2px white;
+        
+    }
+  }
+
+  @media only screen and (max-width: 375px){
+    .content h2{
+        letter-spacing: 2px;
+        word-spacing: 20px;
+        padding-top: 20px;
+        font-size: 80%;
+        font-family: 'Roboto', sans-serif;
+        font-weight: lighter;
+        
+    }
+    header{
+        height: 250px;
+    }
+
+    .toggle{
+        font-size: 10px;
+    }
+  }

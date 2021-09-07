@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fast Typing Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+<button class="setting-btn" id="setting-btn">
+    <i class="fas fa-tools fa-2x" ></i>
+</button>
+
+<div class="setting hide" id="setting">
+<label for="difficulty">Difficulty</label>
+    <select  id="difficulty" class="difficulty">
+        <option value="Easy">Easy</option>
+        <option value="Medium">Medium</option>
+        <option value="Hard">Hard</option>
+    </select>
+</div>
+
+<div class="container">
+    <h1>Fast Typing Game</h1>
+    <p style="padding: 0px; margin: 0px;">To Increase your Typing Speed .Type this word as fast as you can:</p>
+    <h2 id="word"></h2>
+    <input type="text" class="userword" id="userword" placeholder="Please Typing Fast">
+    <p id="scorecard" class="scorecard">Score <span id="score">0</span></p>
+    <p class="Timer" >Time Remaining :  <span id="Timer">0</span></p>
+</div>
+
+<div class="gameover" id="gameover"></div>
+    <script src="script.js"></script>
+</body>
+</html>

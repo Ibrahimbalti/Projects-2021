@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Classic Hangman Game</title>
+</head>
+<body>
+    <div class="container">
+        <h2>HangMan</h2>
+        <p>Find the hiden word - guest a letter by entering it on your keyboard</p>
+        <div class="hungman">
+            <svg class="figure" id="figure" width="300" height="300" >
+             <line x1="20" y1="20" x2="80" y2="20"></line>
+             <line x1="80" y1="20" x2="80" y2="50"></line>
+             <line x1="20" y1="20" x2="20" y2="290"></line>
+             <line x1="20" y1="220" x2="100" y2="220"></line>
+             <line x1="100" y1="220" x2="100" y2="240"></line>
+             <line x1="100" y1="240" x2="120" y2="240"></line>
+             <line x1="120" y1="240" x2="120" y2="260"></line>
+             <line x1="120" y1="260" x2="140" y2="260"></line>
+             <line x1="140" y1="260" x2="140" y2="275"></line>
+             <line x1="140" y1="275" x2="158" y2="275"></line>
+             <line x1="158" y1="275" x2="158" y2="291"></line>
+             <line x1="20" y1="290" x2="159" y2="290"></line>
+
+             <circle cx="80" cy="60" r="10" class="figure-part"/> 
+             <line x1="80" y1="70" x2="80" y2="120" class="figure-part"></line>
+             <line x1="60" y1="100" x2="80" y2="80" class="figure-part"></line>
+             <line x1="80" y1="80" x2="100" y2="100" class="figure-part"></line>
+             <line x1="80" y1="120" x2="60" y2="140" class="figure-part"></line>
+             <line x1="80" y1="120" x2="100" y2="140" class="figure-part"></line>
+
+            </svg>
+        </div>
+
+     <div class="correctletter" id="correctletter">
+         <!-- <p>Correct letter</p> -->
+         <!-- <div class="letter">j</div>
+         <div class="letter">j</div>
+         <div class="letter">j</div> -->
+     </div>   
+
+     <div class="incorrectletter" id="incorrectletter">
+         <!-- <p>Incorrect letter</p>
+         <span class="letters">a</span>
+         <span class="letters">b</span>
+         <span class="letters">c</span> -->
+     </div>
+
+ <div class="congratulation-container" id="congratulation-container">
+     <div class="congrate">
+    <p class="congrat-heading"id="final-message" ></p>
+        <button class="playagain" id="playagain" >
+         Play Again
+        </button>
+    </div>
+</div>
+     <div class="notification " id="notification">
+         <p>You  already Select this letter, Please Guess another letter</p>
+     </div>
+     
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

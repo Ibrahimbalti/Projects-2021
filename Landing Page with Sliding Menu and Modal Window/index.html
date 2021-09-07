@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page with Sliding Menu and Modal Window</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-----------------Nav---------------------------->
+
+    <nav>
+        <div class="logo">
+            <img src="./image/logo.jpg">
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Profolio</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+
+<!-----------------Header---------------------------->
+
+<header>
+    <button class="toggle" id="toggle">
+        <i class="fa fa-bars fa-2x"></i>
+        </button>
+        <div class="content">
+            <h2>I Love To Design & Develop Some Great Things For You</h2>
+            <p >I Am <span >a Web Developer</span></p>
+            <button class="signup" id="open">Contact Us</button>
+        </div>
+   
+</header>
+
+<!-----------------Container---------------------------->
+
+<div class="container">
+
+    <!-----------------Project 1---------------------------->
+
+    <div class="project">
+        <a href="#">
+            <img src="./image/htmlform4.jpg" alt="html form">
+            <h4>HTML Form</h4>
+        </a>
+    </div>
+
+     <!-----------------Project 2---------------------------->
+
+     <div class="project">
+        <a href="#">
+            <img src="./image/seatselction3.jpg" alt="Seat">
+            <h4>Seat Selection at Movie Theater</h4>
+        </a>
+     </div>
+
+      <!-----------------Project 3---------------------------->
+
+      <div class="project">
+        <a href="#">
+            <img src="./image/Video Player.jpg" alt="Video player">
+            <h4>Video Player</h4>
+        </a>
+      </div>
+
+     <!-----------------Project 4---------------------------->
+
+     <div class="project">
+        <a href="#">
+            <img src="./image/exchagerate1.jpg" alt=" Exchange rate">
+            <h4>Calculating Exchange Rates</h4>
+        </a>
+     </div>
+
+      <!-----------------Project 5---------------------------->
+
+      <div class="project">
+        <a href="#">
+            <img src="./image/DOmmethod1.jpg" alt="Method">
+            <h4>DOM Arrays Methods</h4>
+        </a>
+      </div>
+
+     <!-----------------Project 6---------------------------->
+
+     <div class="project">
+        <a href="#">
+            <img src="./image/landingpare13.jpg" alt="Landing page" >
+            <h4>Landing Page </h4>
+        </a>
+     </div>
+
+      <!-----------------Project 7---------------------------->
+
+      <div class="project">
+        <a href="#">
+            <img src="./image/hngman2.jpg" alt="Game">
+            <h4>Classic Hangman Game</h4>
+        </a>
+      </div>
+
+      <div class="project">
+        <a href="#">
+            <img src="./image/hngman2.jpg" alt="Game" >
+            <h4>Classic Hangman Game</h4>
+        </a>
+      </div>
+      <!-- <div class="project">
+        <a href="#">
+            <img src="./image/hngman2.jpg" alt="Game">
+            <h4>Classic Hangman Game</h4>
+        </a>
+      </div> -->
+      
+      
+<!-----------------Modal---------------------------->
+<div class="modal-container" id="modal">
+    <div class="modal">
+        <div class="modal-close" id="close">
+         <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+        <div class="modal-header">
+            <h2>Get in Touch</h2>
+        </div>
+        <div class="modal-content">
+            <form  class="modal-form">
+
+                <div>
+                <input type="text" placeholder="Name">
+                </div>
+
+                <div>
+                 <input type="email" placeholder="Email">
+                 </div>
+
+                 <!-- <div  id="message">
+                     <input type="text" placeholder="Message">
+                     </div> -->
+                     <textarea cols="25" placeholder="Enter your message" required="required" class="message" rows="8"></textarea>
+                     <br>
+        
+            <button>Send message</button>
+                     
+     
+            </form>
+
+        </div>
+    </div>
+</div>
+</div>
+
+ <div class="footer">
+<h4>@Footer</h4>
+ </div>
+
+ <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracking</title> 
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <h1>Expense Tracking</h1>
+    <div class="totalamount" id="amount">
+        
+    </div>
+    <div class="flexcontainer">
+        <div class="credit" id="credit">
+            
+            <h3>Credit </h3>
+            <h4>$000</h4>
+        </div>
+
+        <div class="debit" id="debit">
+            <!-- <h3>Debit </h3>
+            <h4>000</h4> -->
+        </div>
+    </div>
+
+    <div class="historycontainer">
+        <h2>History</h2>
+        <ul class="list" id="list">
+            
+            <!-- <li class="credits">Salary <span>500</span><button class="dele-btn">X</button></li>
+           
+            <li class="debits">Salary <span>400</span><button class="dele-btn">X</button></li> -->
+          
+        </ul>
+    </div>
+<div class="addtransactioncontainer">
+    <h2>Add Transaction</h2>
+    <form  class="addform" id="form">
+        <label for="reason">Description</label>
+<input type="text" class="reason" id="reason" >
+<label for="amount">Amount</label>
+<input type="number" class="reason" id="amounts" >
+
+<button class="btn" id="btn">Add Transaction</button>
+    </form>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

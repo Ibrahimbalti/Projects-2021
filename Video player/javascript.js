@@ -226,7 +226,10 @@ fullscreen.addEventListener('click',updatescreen);
 
 nextvideo.addEventListener('click',NextVideos);
 
-previosvideo.addEventListener('click',PreviousVideo)
+previosvideo.addEventListener('click',PreviousVideo);
+
+
+
 
 
 //.............End.....................
